@@ -1,0 +1,67 @@
+<div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+</div>
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+  <ol class="list-unstyled">
+    <% 
+    var arr = []
+    site.posts.each(function(item) {
+      var path = item.path.slice(0,7)
+      if(arr.indexOf(path) == -1)  {
+        arr.push(path)
+    %>
+        <li><a href="<%- config.root %><%- config.archive_dir %>/<%- path %>"><%- path %></a></li>
+    <%
+      }
+    })
+    %>
+  </ol>
+</div>
+
+<div class="sidebar-module">
+  <h4>tags</h4>
+  <ol class="list-unstyled">
+    <%
+    site.tags.each(function(tag){
+      // console.log(tag.path)
+    %>
+      <li><a href="<%- config.root %><%- tag.path %>"><%- tag.name %></a></li>
+    <%
+    }) 
+    %>
+  </ol>
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Elsewhere</h4>
+  <ol class="list-unstyled">
+      <li>
+        <a href="https://github.com">
+          <%- image_tag('assets/svg/github.svg',{height: "25px"}) %>
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://gitee.com">
+          <%- image_tag('assets/svg/gitee.svg',{height: "25px"}) %>
+          Gitee
+        </a>
+      </li>
+      <li>
+        <a href="https://hexo.io/zh-cn/">
+          <%- image_tag('assets/svg/hexo.svg',{height: "25px"}) %>
+          Hexo 中文文档
+        </a>
+      </li>
+      <li>
+        <a href="https://convertio.co/zh/">
+          <%- image_tag('assets/svg/convertTool.svg',{height: "25px"}) %>
+          文件格式转换工具
+        </a>
+      </li>
+  </ol>
+</div>

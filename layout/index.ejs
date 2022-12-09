@@ -1,0 +1,7 @@
+<!-- <span>Content</span> -->
+<% page.posts.each(function(item){ %>
+  <!-- partial('_partial/article-excerpt', {item: item}) -->
+  <%- partial('_partial/article-title', {item: item}) %>
+<% }); %>   
+
+<%- partial('_partial/pagination') %> 
