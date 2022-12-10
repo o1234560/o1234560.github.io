@@ -1,5 +1,12 @@
-<% 
-page.posts.each(function(item){
-%>
+<!-- archives 中 某个 archive 的页面 -->
+
+<h3 style="background-color: rgb(211, 211, 255);">
+    <%
+    // console.log(page)
+    %> 
+    <%- page.base %> 
+</h3>
+
+<% page.posts.each(function(item){ %>
     <%- partial('_partial/article-archive', {item: item}) %>
 <% }); %>

@@ -1,10 +1,15 @@
+<!-- tags 中某个 tag 的页面 -->
+
+<h3  style="background-color: rgb(211, 255, 213);">
+  <% 
+  // console.log(page)
+  %> 
+  <%- page.base %> 
+</h3>
+
 <% 
 // console.log(page.posts)
 %> 
-<% page.posts.each(function(item){
-  // partial('_partial/article-excerpt', {item: item})
-%>
+<% page.posts.each(function(item){ %>
   <%- partial('_partial/article-title', {item: item}) %>
-<%
-})
-%>   
+<% }) %>   

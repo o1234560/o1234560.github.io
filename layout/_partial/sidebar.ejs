@@ -1,6 +1,6 @@
 <div class="sidebar-module sidebar-module-inset">
   <h4>About</h4>
-  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+  <p>这是一段<em>文字介绍</em> 没什么用。Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, esse.</p>
 </div>
 
 <div class="sidebar-module">
@@ -32,6 +32,34 @@
     <%
     }) 
     %>
+  </ol>
+</div>
+
+<div class="sidebar-module">
+  <h4>categories</h4>
+  <ol class="list-unstyled">
+    <%
+    site.categories.each(function(category){
+      // console.log(tag.path)
+    %>
+      <li><a href="<%- config.root %><%- category.path %>"><%- category.name %></a></li>
+    <%
+    }) 
+    %>
+  </ol>
+</div>
+
+
+<div class="sidebar-module sidebar-module-inset">
+  <h4>pages(网站中单独的页面)</h4>
+  <ol class="list-unstyled">
+    <%
+    // console.log(site.pages)
+    %> 
+
+    <% site.pages.each(function(page){ %> 
+      <li><a href="<%- url_for('/') %><%- page.path %>"><%- page.title %> </a></li>
+    <% }) %> 
   </ol>
 </div>
 

@@ -236,3 +236,8 @@ figure {
 .sidebar-module li{
     margin: 10px 0;
 }
+
+.blog-main img{
+    width: 100%;
+    border: 1px dotted #333;
+}

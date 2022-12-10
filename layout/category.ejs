@@ -1,0 +1,13 @@
+<!-- categories 中某一个 category 的页面 -->
+
+<% console.log(page.category,'分类中有',page.posts) %> 
+<h3  style="background-color: rgb(255, 232, 211);">
+    <% 
+    // console.log(page)
+    %> 
+    <%- page.base %> 
+</h3>
+
+<% page.posts.each(function(item){ %>
+  <%- partial('_partial/article-title', {item: item}) %>
+<% }); %>   
