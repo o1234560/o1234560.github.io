@@ -1,0 +1,231 @@
+<!-- 布局 -->
+
+<html>
+
+<!-- Head tag -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="blog, hexo">
+  <meta name="author" content="o12346o">
+  <link rel="icon" href="/assets/favicon.ico">
+
+  <title>
+    o12346o 博客 
+  </title>
+
+  <!-- Bootstrap core CSS -->
+  
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  
+<link rel="stylesheet" href="/css/ie10-viewport-bug-workaround.css">
+ 
+
+  <!-- Custom styles for this template -->
+  
+<link rel="stylesheet" href="/css/blog.css">
+ 
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <!-- Menu -->
+  <div class="blog-masthead">
+  <div class="container">
+      <nav class="blog-nav">
+          
+              <a class="blog-nav-item" href="/">Home</a>
+          
+              <a class="blog-nav-item" href="/archives">Archives</a>
+          
+      </nav>
+  </div>
+</div> 
+
+  <div class="container">
+    <!-- Blog Header: title and subtitle -->
+    <div class="blog-header">
+  <h1 class="blog-title">o12346o 博客</h1>
+  <p class="lead blog-description"></p>
+</div> 
+
+    <div class="row">
+      <!-- Main Content -->
+      <div class="col-sm-8 blog-main">
+        <!-- 某个 page 的页面 -->
+
+<h1 style="background-color: rgb(103, 108, 255)">
+  Page 页面 
+</h1>
+
+<div class="blog-post">
+
+  <!-- Title -->
+  <h2 class="blog-post-title">
+      <a href="/hexo-生成的-bolg-的文档结构/index.html">
+          hexo 生成的 bolg 的文档结构
+      </a>
+  </h2>
+
+  <!-- Date and Author -->
+  <p class="blog-post-meta">
+      2022-12-10
+      
+  </p>
+
+  <!-- Content -->
+  <p><code>hexo g</code> 生成网站文件夹及各个 html 页面。</p>
+<p>网站文件夹结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">public  </span><br><span class="line">  ├─index.html  <span class="comment"># 博客首页</span></span><br><span class="line">  │  </span><br><span class="line">  ├─archives  <span class="comment"># 归档文件夹</span></span><br><span class="line">  │   ├─index.html <span class="comment"># 总归档首页</span></span><br><span class="line">  │   │</span><br><span class="line">  │   ├─2022 <span class="comment"># 年份文件夹</span></span><br><span class="line">  │   │   ├─index.html  <span class="comment"># 年份各个归档</span></span><br><span class="line">  │   │   │   </span><br><span class="line">  │   │   ├─10 <span class="comment"># 月份文件夹</span></span><br><span class="line">  |   │   │  └─index.html <span class="comment"># 月份各个归档</span></span><br><span class="line">  │   │   │ </span><br><span class="line">  │   │   └─12</span><br><span class="line">  |   │      └─index.html</span><br><span class="line">  │   │</span><br><span class="line">  │   ├─2022</span><br><span class="line">  │   │   ├─index.html</span><br><span class="line">  │   │   │   </span><br><span class="line">  │   │   ├─01</span><br><span class="line">  |   │   │  └─index.html</span><br><span class="line">  │   │   │ </span><br><span class="line">  │   │   └─...</span><br><span class="line">  │   │</span><br><span class="line">  │   └─...</span><br><span class="line">  │   </span><br><span class="line">  │     </span><br><span class="line">  ├─categories  <span class="comment"># 总分类文件夹</span></span><br><span class="line">  │   ├─category1 <span class="comment"># 某个分类文件夹</span></span><br><span class="line">  │   │   └─index.hhtml <span class="comment"># 某个分类（里面有该分类下的所有 post 信息）</span></span><br><span class="line">  │   │</span><br><span class="line">  │   ├─category2</span><br><span class="line">  │   │   └─index.hhtml</span><br><span class="line">  │   │</span><br><span class="line">  │   └─...</span><br><span class="line">  │  </span><br><span class="line">  │    </span><br><span class="line">  ├─tags <span class="comment"># 总标签文件夹</span></span><br><span class="line">  │   ├─tag1 <span class="comment"># 某个标签文件夹</span></span><br><span class="line">  │   │   └─index.hhtml <span class="comment">#某个标签（里面有该标签下的所有 post 信息）</span></span><br><span class="line">  │   │</span><br><span class="line">  │   ├─tag2</span><br><span class="line">  │   │   └─index.hhtml</span><br><span class="line">  │   │</span><br><span class="line">  │   └─...</span><br><span class="line">  │     </span><br><span class="line">  ├─page1 <span class="comment"># 某个页面文件夹</span></span><br><span class="line">  │   └─index.hhtml <span class="comment">#某个page的页面</span></span><br><span class="line">  │     </span><br><span class="line">  ├─page2</span><br><span class="line">  │   └─index.hhtml</span><br><span class="line">  │</span><br><span class="line">  ├─2022 <span class="comment"># 年份</span></span><br><span class="line">  │   │   </span><br><span class="line">  │   ├─10 <span class="comment"># 月份</span></span><br><span class="line">  |   │  ├─post1 <span class="comment"># 某个post名</span></span><br><span class="line">  |   │  │    └─index.html <span class="comment"># 某个post的页面 </span></span><br><span class="line">  |   │  │</span><br><span class="line">  |   │  └─post1</span><br><span class="line">  |   │      └─index.html</span><br><span class="line">  │   │ </span><br><span class="line">  │   └─...</span><br><span class="line">  └─...  <span class="comment"># 其他文件（theme中source文件夹中所有的内容）</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注：根据所使用的主题中的配置来生成各个 html 页面。</p>
+</blockquote>
+
+
+  <hr />
+
+  <!-- Tags and Categories links -->
+  
+  
+
+</div>
+
+<!-- Post footer -->
+<div class="blog-post-footer">  
+
+</div>
+ 
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+  <p>这是一段<em>文字介绍</em> 没什么用。Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, esse.</p>
+</div>
+
+<div class="sidebar-module">
+  <h4>Archives</h4>
+  <ol class="list-unstyled">
+    
+        <li><a href="/archives/2022/12">2022/12</a></li>
+    
+        <li><a href="/archives/2023/01">2023/01</a></li>
+    
+  </ol>
+</div>
+
+<div class="sidebar-module">
+  <h4>tags</h4>
+  <ol class="list-unstyled">
+    
+      <li><a href="/tags/hexo/">hexo</a></li>
+    
+      <li><a href="/tags/SVG/">SVG</a></li>
+    
+      <li><a href="/tags/测试/">测试</a></li>
+    
+      <li><a href="/tags/主题/">主题</a></li>
+    
+      <li><a href="/tags/静态资源/">静态资源</a></li>
+    
+  </ol>
+</div>
+
+<div class="sidebar-module">
+  <h4>categories</h4>
+  <ol class="list-unstyled">
+    
+      <li><a href="/categories/主题/">主题</a></li>
+    
+  </ol>
+</div>
+
+
+<div class="sidebar-module sidebar-module-inset">
+  <h4>pages(网站中单独的页面)</h4>
+  <ol class="list-unstyled">
+     
+
+     
+      <li><a href="/cat/index.html">cat </a></li>
+     
+      <li><a href="/cat1/index.html">cat1 </a></li>
+     
+      <li><a href="/hexo-生成的-bolg-的文档结构/index.html">hexo 生成的 bolg 的文档结构 </a></li>
+     
+      <li><a href="/cat2/index.html">cat2 </a></li>
+     
+      <li><a href="/测试一下-page页面测试/index.html">测试一下-page页面测试 </a></li>
+     
+  </ol>
+</div>
+
+
+<div class="sidebar-module">
+  <h4>Elsewhere</h4>
+  <ol class="list-unstyled">
+      <li>
+        <a target="_blank" rel="noopener" href="https://github.com">
+          <img src="/assets/svg/github.svg" height="25px">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener" href="https://gitee.com">
+          <img src="/assets/svg/gitee.svg" height="25px">
+          Gitee
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">
+          <img src="/assets/svg/hexo.svg" height="25px">
+          Hexo 中文文档
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener" href="https://convertio.co/zh/">
+          <img src="/assets/svg/convertTool.svg" height="25px">
+          文件格式转换工具
+        </a>
+      </li>
+  </ol>
+</div> 
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="blog-footer">
+  <p>Blog template built for <a target="_blank" rel="noopener" href="http://getbootstrap.com">Bootstrap</a> by <a target="_blank" rel="noopener" href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>Adapted to Hexo by <a target="_blank" rel="noopener" href="http://www.codeblocq.com/">klugjo</a>.</p>
+  <p><a href="#">Back to top</a></p>
+</footer> 
+  
+  <!-- After footer scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+
+ 
+</body>
+
+</html>
