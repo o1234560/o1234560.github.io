@@ -238,6 +238,9 @@ figure {
 }
 
 .blog-main img{
-    width: 100%;
+    max-width: 100%;
     border: 1px dotted #333;
+}
+.blog-main iframe{
+    max-width: 100%;
 }
