@@ -191,33 +191,31 @@ h6, .h6 {
 
 /* post 换页 */
 .blog-post-footer {
-    font-size: 20px;
-    height: 80px;
+    font-size: 16px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
     /* padding-bottom: 30px; */
 }
-.blog-post-footer p {
+
+.blog-post-footer a {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-footer a p{
     margin: 0;
     padding: 0;
-    height: 30px;
-    line-height: 30px;
+    color: #f3a;
+    font-weight: bold;
+    line-height: 20px;
+}
+.blog-post-footer .next p{
+    display: flex;
+    justify-content: right;
 }
 
-.blog-post-footer .prev{
-    float: left;
-}
-
-.blog-post-footer .next{
-    float: right;
-}
-
-.blog-post-footer .next p:first-child{
-    float: right;
-}
-.blog-post-footer .next p:last-child{
-    clear: both;
-}
-
-
+/* 代码块 */
 figure {
     width: 100%;
     overflow: auto;
@@ -233,10 +231,12 @@ figure {
     background-color: rgb(217, 221, 255);
 }
 
+/* 侧边栏 */
 .sidebar-module li{
     margin: 10px 0;
 }
 
+/* 页面元素 img 和 iframe */
 .blog-main img{
     max-width: 100%;
     border: 1px dotted #333;
