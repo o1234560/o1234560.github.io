@@ -90,7 +90,7 @@
 <p>在 <code>source/cat1/index.md</code> 中：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 插入图片</span></span><br><span class="line"></span><br><span class="line">![](../../blogAssets/img/cats.png) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 此种方式，md文件无法正常显示图片，生成的 html 文件也无法正常引用图片</span></span><br></pre></td></tr></table></figure>
 
-<iframe src="https://o12346o.gitee.io/cat1/index.html" width="500px" height="500px"></iframe>
+<iframe src="https://o12346o.gitee.io/cat1/index.html" width="500" height="500" name="cat1" scrolling="no">浏览器不支持 iframe。</iframe>
 
 <h3 id="正确的引用方式"><a href="#正确的引用方式" class="headerlink" title="正确的引用方式"></a>正确的引用方式</h3><p><em>将静态资源文件放到主题的 <code>source</code> 文件夹中</em></p>
 <p><code>hexo</code> 创建的 blog 项目结构如下：</p>
@@ -100,7 +100,7 @@
 <p>在 <code>source/cat2/index.md</code> 中：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 插入图片</span></span><br><span class="line"></span><br><span class="line">![](assets/img/cats.png) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 此种方式，md文件无法正常显示图片，生成的 html 文件可以正常引用图片</span></span><br></pre></td></tr></table></figure>
 
-<iframe src="https://o12346o.gitee.io/cat2/index.html" width="500px" height="500px"></iframe>
+<iframe src="https://o12346o.gitee.io/cat2/index.html" width="500" height="500" name="cat2" scrolling="no">浏览器不支持 iframe。</iframe>
 
 <h3 id="或者直接使用网络地址"><a href="#或者直接使用网络地址" class="headerlink" title="或者直接使用网络地址"></a>或者直接使用网络地址</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 插入图片</span></span><br><span class="line"></span><br><span class="line">![](https://xxx/xxx/xxx.png) </span><br><span class="line"></span><br><span class="line"><span class="comment"># 此种方式，md文件可以正常显示图片，生成的 html 文件也可以正常引用图片</span></span><br></pre></td></tr></table></figure>
 
@@ -188,9 +188,9 @@
      
       <li><a href="/cat/index.html">cat </a></li>
      
-      <li><a href="/cat1/index.html">cat1 </a></li>
-     
       <li><a href="/cat2/index.html">cat2 </a></li>
+     
+      <li><a href="/cat1/index.html">cat1 </a></li>
      
       <li><a href="/hexo-生成的-bolg-的文档结构/index.html">hexo 生成的 bolg 的文档结构 </a></li>
      
@@ -242,7 +242,7 @@
 </footer> 
   
   <!-- After footer scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
 
 <script src="/bootstrap/js/bootstrap.min.js"></script>
@@ -251,6 +251,7 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
 <script src="/js/ie10-viewport-bug-workaround.js"></script>
+
 
  
 </body>
