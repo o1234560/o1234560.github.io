@@ -39,13 +39,21 @@ if(prev){
         <p><%- item.prev.title %></p>
     </a>
 <%
-}
+} else {
+%>
+    <a href="#"></a>
+<%}
+
 if(next){ 
 %>
-    <a class="next" href="<%- config.root %><%- item.next.path %> ">
-        <p>nxet</p>
+    <a class="next" href="<%- config.root %><%- item.next.path %>">
+        <p>next</p>
         <p><%- item.next.title %></p>
     </a>
+<%
+} else {
+%>
+    <a href="#"></a>
 <%
 }
 %>
