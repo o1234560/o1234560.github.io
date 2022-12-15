@@ -72,19 +72,23 @@
 
   <!-- Title -->
   <h2 class="blog-post-title">
-      <a href="/2022/12/08/测试一下/">
-          测试一下
+      <a href="/2022/12/15/vue-deep-修改深层样式/">
+          vue-:deep()-修改深层样式
       </a>
   </h2>
 
   <!-- Date and Author -->
   <p class="blog-post-meta">
-      2022-12-08
+      2022-12-15
       
   </p>
 
   <!-- Content -->
-  <p>这是一个测试。</p>
+  <h2 id="Vue-中的-CSS-深度选择器"><a href="#Vue-中的-CSS-深度选择器" class="headerlink" title="Vue 中的 CSS 深度选择器"></a>Vue 中的 CSS 深度选择器</h2><p>当在 vue 单组件中使用elementUI等组件库时，想要修改 el-xxx 的样式，但是由于使用了 scoped ，当前样式无法作用到 el-xxx 身上，在最外层（根组件）修改也不方便。</p>
+<p>这时，可以使用 <code>:deep(样式名)</code> 来修改样式。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style scoped&gt;</span><br><span class="line">:deep(.el-scroll) &#123;</span><br><span class="line">  background: #f00;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>或者是使用 <code>/deep/样式名</code> 、<code>&gt;&gt;&gt;样式名</code>、<code>::deep 样式名</code>。（这三个不推荐）</p>
 
 
   <hr />
@@ -94,24 +98,30 @@
   
   <div class="blog-tags-container">
       <span class="glyphicon glyphicon-tags"></span>
-      <a href="/tags/测试/">#测试</a>
+      <a href="/tags/vue/">#vue</a>
   </div>
   
   
+  
+  <div class="blog-categories-container">
+      <span class="glyphicon glyphicon-folder-open"></span>
+      <a href="/categories/笔记/">笔记</a>
+  </div>
+
 
 </div>
 
 <!-- Post footer -->
 <div class="blog-post-footer">  
  
-    <a class="prev" href="/2022/12/08/01-概述/ ">
+    <a class="prev" href="/2023/01/09/测试一下-主题-archive功能/ ">
         <p>prev</p> 
-        <p>01-概述</p>
+        <p>测试一下-主题-archive功能</p>
     </a>
 
-    <a class="next" href="/2022/12/08/hello-world/">
+    <a class="next" href="/2022/12/15/vue-cli-创建项目/">
         <p>next</p>
-        <p>Hello World</p>
+        <p>vue-cli 创建项目</p>
     </a>
 
 </div> 

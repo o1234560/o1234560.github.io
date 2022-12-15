@@ -62,13 +62,31 @@
     <div class="row">
       <!-- Main Content -->
       <div class="col-sm-8 blog-main">
-        <!-- 某个 post 的页面 -->
+        <!-- <span>Content</span> -->
 
-<h1 style="background-color: rgb(103, 108, 255);">
-  Post 页面 
-</h1>
+<!-- 首页页面 -->
 
-<div class="blog-post">
+
+  <!-- partial('_partial/article-excerpt', {item: item}) -->
+  <div class="blog-post">
+
+  <!-- Title -->
+  <h2 class="blog-post-title">
+      <a href="/2022/12/08/01-概述/">
+          01-概述
+      </a>
+  </h2>
+
+  <!-- Date and Author -->
+  <p class="blog-post-meta">
+    2022-12-08
+    
+  </p>
+
+</div>
+
+  <!-- partial('_partial/article-excerpt', {item: item}) -->
+  <div class="blog-post">
 
   <!-- Title -->
   <h2 class="blog-post-title">
@@ -79,42 +97,39 @@
 
   <!-- Date and Author -->
   <p class="blog-post-meta">
-      2022-12-08
-      
+    2022-12-08
+    
   </p>
-
-  <!-- Content -->
-  <p>这是一个测试。</p>
-
-
-  <hr />
-
-  <!-- Tags and Categories links -->
-  
-  
-  <div class="blog-tags-container">
-      <span class="glyphicon glyphicon-tags"></span>
-      <a href="/tags/测试/">#测试</a>
-  </div>
-  
-  
 
 </div>
 
-<!-- Post footer -->
-<div class="blog-post-footer">  
- 
-    <a class="prev" href="/2022/12/08/01-概述/ ">
-        <p>prev</p> 
-        <p>01-概述</p>
-    </a>
+  <!-- partial('_partial/article-excerpt', {item: item}) -->
+  <div class="blog-post">
 
-    <a class="next" href="/2022/12/08/hello-world/">
-        <p>next</p>
-        <p>Hello World</p>
-    </a>
+  <!-- Title -->
+  <h2 class="blog-post-title">
+      <a href="/2022/12/08/hello-world/">
+          Hello World
+      </a>
+  </h2>
 
-</div> 
+  <!-- Date and Author -->
+  <p class="blog-post-meta">
+    2022-12-08
+    
+  </p>
+
+</div>
+   
+
+<nav>
+  <ul class="pager">
+      
+          <li><a href="/">Previous</a></li>
+      
+      
+  </ul>
+</nav>  
       </div>
 
       <!-- Sidebar -->
